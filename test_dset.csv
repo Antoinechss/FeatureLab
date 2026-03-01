@@ -1,0 +1,21 @@
+user_id,age,salary,country,product_code,signup_date,review_text,platform
+1000,34,42000,US,P4821,2022-03-14,Great product!,mobile
+1001,29,88000,UK,P1934,2022-07-21,Excellent service and fast delivery.,mobile
+1002,45,150000,FR,P7742,2023-01-05,Very disappointed with the quality.,mobile
+1003,38,32000,DE,P5521,2022-11-30,Average experience.,mobile
+1004,27,54000,US,P8843,2023-04-12,Great product!,mobile
+1005,NaN,120000,UK,P2291,2022-09-08,Very disappointed with the quality.,mobile
+1006,52,210000,FR,P9981,2023-02-19,Excellent service and fast delivery.,mobile
+1007,41,76000,DE,P3412,2022-06-01,,mobile
+1008,36,49000,US,P6573,2022-12-15,Average experience.,mobile
+1009,33,67000,UK,P7719,2023-03-27,Great product!,mobile
+1010,60,300000,FR,P1102,2023-05-10,Excellent service and fast delivery.,mobile
+1011,22,25000,DE,P9083,2022-08-18,Average experience.,mobile
+1012,48,180000,US,P6672,2023-01-30,Very disappointed with the quality.,mobile
+1013,31,52000,UK,P7755,2022-10-09,Great product!,mobile
+1014,39,91000,FR,P4441,2023-04-02,,mobile
+1015,44,130000,DE,P2203,2022-07-14,Excellent service and fast delivery.,mobile
+1016,28,47000,US,P8812,2023-02-07,Average experience.,mobile
+1017,35,60000,UK,P1022,2022-09-25,Great product!,mobile
+1018,55,250000,FR,P3377,2023-03-12,Very disappointed with the quality.,mobile
+1019,30,51000,DE,P7748,2022-11-03,Average experience.,mobile

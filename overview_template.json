@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "generated_at": "2026-02-26T14:32:10Z",
+    "profile_config": {
+      "skew_threshold": 2.0,
+      "high_cardinality_unique_ratio": 0.2,
+      "correlation_threshold": 0.9
+    }
+  },
+
+  "overview": {
+    "n_rows": 1000,
+    "n_columns": 5,
+    "missing_pct": 3.2,
+    "duplicate_rows": 12,
+    "memory_mb": 0.84,
+    "dtype_distribution": {
+      "int64": 2,
+      "float64": 1,
+      "object": 2
+    }
+  },
+
+  "columns": [
+    {
+      "name": "user_id",
+      "pandas_dtype": "int64",
+      "inferred_type": "id_like",
+      "missing_pct": 0.0,
+      "unique_count": 1000,
+      "unique_ratio": 1.0,
+      "warnings": ["high_unique_ratio", "possible_identifier"]
+    },
+    {
+      "name": "age",
+      "pandas_dtype": "int64",
+      "inferred_type": "numeric",
+      "missing_pct": 1.2,
+      "unique_count": 45,
+      "unique_ratio": 0.045,
+      "stats": {
+        "mean": 36.4,
+        "std": 12.1,
+        "min": 18,
+        "max": 82,
+        "skewness": 0.8
+      },
+      "warnings": []
+    },
+    {
+      "name": "signup_date",
+      "pandas_dtype": "datetime64[ns]",
+      "inferred_type": "datetime",
+      "missing_pct": 0.0,
+      "unique_count": 320,
+      "unique_ratio": 0.32,
+      "datetime_range": {
+        "min": "2021-01-01",
+        "max": "2023-12-31"
+      },
+      "warnings": []
+    }
+  ],
+
+  "flags": {
+    "id_like_columns": ["user_id"],
+    "constant_columns": [],
+    "high_cardinality_columns": [],
+    "highly_skewed_numeric": [],
+    "highly_correlated_pairs": [
+      {
+        "feature_a": "salary",
+        "feature_b": "income",
+        "correlation": 0.93
+      }
+    ]
+  },
+
+  "artifacts": {
+    "distributions": [
+      {
+        "column": "age",
+        "kind": "histogram",
+        "params": {
+          "bins": 20
+        }
+      },
+      {
+        "column": "signup_date",
+        "kind": "time_series",
+        "params": {
+          "frequency": "M"
+        }
+      }
+    ]
+  }
+}
